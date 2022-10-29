@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trainer Registration</title>
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+    </head>
+    <body>
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top sticky-top" style="background-color:saddlebrown ;">
+        <a class="navbar-brand" href="../index.html" style="color:chartreuse">Khelo Smart</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Contact.html">Contact </a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="Login.html">Login </a>
+               </li>
+               <li class="nav-item active">
+                <a class="nav-link" href="Registration.html">Registration <span class="sr-only">(current)</span> </a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <h1 class="display-3">Trainer Registration</h1><br>
+        <p class="lead">Trainer register here! </p>   
+    </div>
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col">
+            <form method="post" action="Registration_trainer.php">
+    <div class="form-group">
+      <label for="">Trainer Id</label>
+      <input type="text" name="trainer_id" id="" class="form-control" placeholder="" aria-describedby="helpId" required>
+      <label for="">Trainer Name</label>
+      <input type="text" name="trainer_name" id="" class="form-control" placeholder="" aria-describedby="helpId" required>
+      <label for="">Email</label>
+      <input type="email" name="email" id="" class="form-control" placeholder="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" aria-describedby="helpId" required>
+      <label for="">Contact</label>
+      <input type="tel" name="contact" id="" class="form-control" placeholder="" pattern="[789][0-9]{9}" aria-describedby="helpId" required>
+      <label for="">Password</label>
+      <input type="password" name="password" id="" class="form-control" placeholder="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}" aria-describedby="helpId" data-toggle="tooltip" data-placement="right" title="Password should contain atleast one capital letter, small letter, number and special character." required>
+      <label for="">Experience</label>
+      <input type="number" name="exp" id="" class="form-control" placeholder="" aria-describedby="helpId" required> 
+      <div class="form-check">
+        <label for="">Gender</label><br>
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="gender" id="" value="0">
+          Male<br>
+          <input type="radio" class="form-check-input" name="gender" id="" value="1">
+          Female
+        </label>
+      </div>
+      <br>
+      <input type="submit" value="Register">
+      <input type="reset">
+    </div>
+</form>
+    </div>
+    <div class="col"></div>
+    </div><br><br><br>
+    <footer class="bg-dark text-muted text-center fixed-bottom">
+        <p>Khelo Smart @ 2022. &copy; Copyrights : Anurag</p>
+    </footer>
+    </body>
+</html>

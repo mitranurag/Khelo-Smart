@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Admin Login</title>
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-danger sticky-top">
+            <a class="navbar-brand" href="../index.html" style="color:chartreuse">Khelo Smart</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation"></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Contact.html">Contact </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Login.html">Login <span class="sr-only">(current)</span> </a>
+                    </li>
+            </div>
+        </nav>
+    <div class="bg-img">
+        <div class="content">
+            <header>Admin Login</header>
+            <form method="POSt" action="Login_admin.php">
+                <div class="field">
+                    <span class="fa fa-user"></span>
+                    <input type="text" name="username" id="" placeholder="Enter ID" aria-describedby="helpId" required>
+                </div>
+                <div class="field space">
+                    <span class="fa fa-lock"></span>
+                    <input type="password" name="password" id="" class="pass-key" placeholder="Password" aria-describedby="helpId" required>
+                    <!-- <span class="show">SHOW</span> -->
+                    </div>
+                <div class="field">
+                    <input type="submit" value="LOGIN">
+                </div>
+                </form>
+            </div>
+        </div>
+       <!-- <script src="../js/script.js"></script> -->
+        <br>
+    </body>
+    <footer class="bg-dark text-muted text-center fixed-bottom">
+        <p>Khelo Smart @ 2022. &copy; Copyrights : Anurag</p>
+    </footer>
+</html>
